@@ -1,7 +1,12 @@
+import { ReactNode } from "react"
 import { Footer } from "./Footer"
 import { Header } from "./Header/Header"
 
-export const Layout = ({ children }: any) => {
+interface ICard{
+  children:ReactNode
+}
+
+export const Layout = ({ children }: ICard) => {
   return(
     <>
       <Header titulo="Dio Bank" />
